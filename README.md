@@ -1,16 +1,22 @@
-# EXPERIMENT--02-Interfacing-a-Digital-output-LED-to-LPC2148-ARM-7-Microcontroller-
+# EXPERIMENT-02-Interfacing-a-Digital-output-LED-to-LPC2148-ARM-7-Microcontroller
+
 ## Interfacing a Digital output (LED) to LPC2148 ARM 7 Microcontroller 
 
-## Aim: To Interface a Digital output (LED) to LPC2148 ARM 7 and write a blink code 
-## Components required: Proteus ISIS professional suite, Kiel μ vision 5 Development environment 
-## Theory 
+# AIM:
+To Interface a Digital output (LED) to LPC2148 ARM 7 and write a blink code.
+
+# COMPONENTS REQUIRED:
+Proteus ISIS professional suite, Kiel μ vision 5 Development environment.
+# THEORY: 
 The full form of an ARM is an advanced reduced instruction set computer (RISC) machine, and it is a 32-bit processor architecture expanded by ARM holdings. The applications of an ARM processor include several microcontrollers as well as processors. The architecture of an ARM processor was licensed by many corporations for designing ARM processor-based SoC products and CPUs. This allows the corporations to manufacture their products using ARM architecture. Likewise, all main semiconductor companies will make ARM-based SOCs such as Samsung, Atmel, TI etc.
 
 What is an ARM7 Processor?
+
 ARM7 processor is commonly used in embedded system applications. Also, it is a balance among classic as well as new-Cortex sequence. This processor is tremendous in finding the resources existing on the internet with excellence documentation offered by NXP Semiconductors. It suits completely for an apprentice to obtain in detail hardware & software design implementation.
 LPC2148 Microcontroller
  The LPC2148 microcontroller is designed by Philips (NXP Semiconductor) with several in-built features & peripherals. Due to these reasons, it will make more reliable as well as the efficient option for an application developer. LPC2148 is a 16-bit or 32-bit microcontroller based on ARM7 family.
-Features of LPC2148
+
+Features of LPC2148:
 The main features of LPC2148 include the following.
 •	The LPC2148 is a 16 bit or 32 bit ARM7 family based microcontroller and available in a small LQFP64 package.
 •	ISP (in system programming) or IAP (in application programming) using on-chip boot loader software.
@@ -32,22 +38,17 @@ The main features of LPC2148 include the following.
  
 ![image](https://user-images.githubusercontent.com/36288975/189275248-cf9f4001-be11-4773-ba86-517bec062fa5.png)
 
-
-## Procedure:
-For creation of project on    Kiel μ vision 5 Development environment (LPC21 XX/48/38)
+# PROCEDURE:
+For creation of project on  Kiel μ vision 5 Development environment (LPC21 XX/48/38)
 1.	Click on the menu Project — New µVision Project creates a new project. Select an empty folder and enter the project name, for example Project1. It is good practice to use a separate folder for each project.
 2.	Next, the dialog Select Device for Target opens.
 ![image](https://user-images.githubusercontent.com/36288975/189275266-1d35fbc4-cdb4-49b2-a7ef-4991dc6f546f.png)
 
- 
-
 Figure -01 Target selection
-Select the device database. Default is Software Packs. You can have various local device databases, which show up in the drop-down box. For legacy devices (Arm7, Arm9), use the Legacy Device Database [no RTE]
+Select the device database. Default is Software Packs. You can have various local device databases, which show up in the drop-down box. For legacy devices (Arm7, Arm9), use the Legacy Device Database [no RTE].
 3.	Select the device for your application. This selection defines essential tool settings such as compiler controls, the memory layout for the linker, and the Flash programming algorithms.
 4.	Click OK.
-5.	Click on the new file option and save the file using save option with .C extension 
-
-
+5.	Click on the new file option and save the file using save option with .C extension.
 
 For creating the simulation environment in Proteus suite 
 Starting New Design
@@ -112,12 +113,42 @@ Figure -11 Hex file for simulation
 
 Step 9: Select the hex file from the Kiel program folder and import the program in to the microcontroller as shown in figure 11 ,  debug and if no errors in connections are found, run the VSM simulation to view the output.
 
+# KIEL - PROGRAM FOR LED BLINKING ON AND OFF (BLINKING)
+```
+#include <lpc214x.h>
 
-## Kiel - Program for LED blinking ON  and  OFF (blinking)
+void delay_ms(unsigned int count)
+{
+  unsigned int j=0,i=0;
 
-## Output screen shots :
+  for(j=0;j<count;j++)
+  {
+    for(i=0;i<3000;i++);
+  }
+}
+
+int main() 
+{
+  PINSEL2 = 0x000000;  //Configure the P1 Pins for GPIO;
+  IO1DIR = 0xffffffff; //Configure the P1 pins as OUTPUT;
+
+  while(1)
+    {
+      IO1SET = 0xffffffff;     // Make all the Port pins as high  
+      delay_ms(1000);
+
+      IO1CLR = 0xffffffff;     // Make all the Port pins as low  
+      delay_ms(1000);
+    }
+}
+```
+
+# OUTPUT:
+![output](op1-PM.png)
+![output](op2-PM.png)
+![output](op3-PM.png)
  
-## Result :
-Interfacing a digital output with ARM microcontroller is executed 
+# RESULT:
+Interfacing a digital output with ARM microcontroller is executed. 
 
 
