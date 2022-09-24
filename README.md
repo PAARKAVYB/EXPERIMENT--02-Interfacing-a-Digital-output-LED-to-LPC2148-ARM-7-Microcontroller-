@@ -41,17 +41,21 @@ The main features of LPC2148 include the following.
 # PROCEDURE:
 For creation of project on  Kiel μ vision 5 Development environment (LPC21 XX/48/38)
 1.	Click on the menu Project — New µVision Project creates a new project. Select an empty folder and enter the project name, for example Project1. It is good practice to use a separate folder for each project.
+
 2.	Next, the dialog Select Device for Target opens.
 ![image](https://user-images.githubusercontent.com/36288975/189275266-1d35fbc4-cdb4-49b2-a7ef-4991dc6f546f.png)
-
 Figure -01 Target selection
 Select the device database. Default is Software Packs. You can have various local device databases, which show up in the drop-down box. For legacy devices (Arm7, Arm9), use the Legacy Device Database [no RTE].
+
 3.	Select the device for your application. This selection defines essential tool settings such as compiler controls, the memory layout for the linker, and the Flash programming algorithms.
+
 4.	Click OK.
+
 5.	Click on the new file option and save the file using save option with .C extension.
 
 For creating the simulation environment in Proteus suite 
 Starting New Design
+
 Step 1: Open ISIS software and select New design in  File menu
  ![image](https://user-images.githubusercontent.com/36288975/189275283-128a9e18-c1b4-4725-90fc-086361f0b0f1.png)
 
@@ -59,24 +63,22 @@ Figure -02 Proteus File Menu
 
  Step 2: A dialogue box appears to save the current design. However, we are creating a new design file so you can click Yes or No depending on the content of the present file. Then a Pop-Up appears asking to select the template. It is similar to selecting the paper size while printing. For now select default or according to the layout size of the circuit.
  ![image](https://user-images.githubusercontent.com/36288975/189275292-833e565c-6583-4667-8aff-376bd8028ee3.png)
-
-  Figure -03 Proteus Default Template Select
+Figure -03 Proteus Default Template Select
  
 Step 3:An untitled design sheet will be opened, save it according to your wish,it is better to create a new folder for every layout as it generates other files supporting your design. However,it is not mandatory.
 
 ![image](https://user-images.githubusercontent.com/36288975/189275301-c4a11767-fe44-4bc0-8d8a-89022825f3cd.png)
-
-  Figure -04 Proteus Design Sheet
+Figure -04 Proteus Design Sheet
  
 Step 4:To Select components, Click on the component mode button.
  ![image](https://user-images.githubusercontent.com/36288975/189275318-5c6e5521-cf09-441d-912f-7bcebdcb8189.png)
-
 Figure -05 Component Mode
+
 Step 5:Click On Pick from Libraries. It shows the categories of components available and a search option to enter the part name.
  
  ![image](https://user-images.githubusercontent.com/36288975/189275326-3eea00d3-6ea3-40e6-a5b2-97d80db0f1aa.png)
 
-  Figure -06 Pick from Libraries
+Figure -06 Pick from Libraries
 
 Step 6: Select the components from categories or type the part name in Keywords text box.
  Place all the required components and route the wires i.e, make connections.
@@ -84,28 +86,25 @@ Either selection mode above the component mode or component mode allows to conne
  
  ![image](https://user-images.githubusercontent.com/36288975/189275342-2365f361-05d0-4fc0-8b44-3934b8b03ea7.png)
 
- Figure -07 Component Properties Selection
+Figure -07 Component Properties Selection
 Double click on the component to edit the properties of the components and click on Ok.
 Step 8: Select ARM microcontroller form the library – pick part 
 ![image](https://user-images.githubusercontent.com/36288975/189275370-90534a4c-8524-4931-9978-291200f0fd2e.png)
-
  
 Figure -08 LPC2138/48 selection
-Step 7:
 
-After making necessary connections click on debug from 
+Step 7: After making necessary connections click on debug from 
 ![image](https://user-images.githubusercontent.com/36288975/189275403-c1506ad6-7795-40f9-b878-9b83e12263b9.png)
 
- Figure -09 Keywords Textbox
+Figure -09 Keywords Textbox
 Example shows selection of push button. Select the components accordingly.
  
- Step 8: The selected components will appear in the devices list. Select the component and place it in the design sheet by left-click., post which select all the associated components as shown in the circuit diagram below 
+Step 8: The selected components will appear in the devices list. Select the component and place it in the design sheet by left-click., post which select all the associated components as shown in the circuit diagram below 
 
  ![image](https://user-images.githubusercontent.com/36288975/189275426-09eb6d0d-aab0-4d8a-8ef8-31288fbfe2a1.png)
-![image](https://user-images.githubusercontent.com/36288975/189275464-1074d010-f106-4615-9959-68ed1a271502.png)
+ ![image](https://user-images.githubusercontent.com/36288975/189275464-1074d010-f106-4615-9959-68ed1a271502.png)
 
 Figure -10 Circuit diagram of LED interface on port -0
-
 
  ![image](https://user-images.githubusercontent.com/36288975/189275481-7466fd00-fe0b-4781-93b8-39b551cdcc36.png)
 
