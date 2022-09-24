@@ -88,18 +88,18 @@ Either selection mode above the component mode or component mode allows to conne
 
 Figure -07 Component Properties Selection
 Double click on the component to edit the properties of the components and click on Ok.
-Step 8: Select ARM microcontroller form the library – pick part 
+Step 7: Select ARM microcontroller form the library – pick part 
 ![image](https://user-images.githubusercontent.com/36288975/189275370-90534a4c-8524-4931-9978-291200f0fd2e.png)
  
 Figure -08 LPC2138/48 selection
 
-Step 7: After making necessary connections click on debug from 
+Step 8: After making necessary connections click on debug from 
 ![image](https://user-images.githubusercontent.com/36288975/189275403-c1506ad6-7795-40f9-b878-9b83e12263b9.png)
 
 Figure -09 Keywords Textbox
 Example shows selection of push button. Select the components accordingly.
  
-Step 8: The selected components will appear in the devices list. Select the component and place it in the design sheet by left-click., post which select all the associated components as shown in the circuit diagram below 
+Step 9: The selected components will appear in the devices list. Select the component and place it in the design sheet by left-click., post which select all the associated components as shown in the circuit diagram below 
 
  ![image](https://user-images.githubusercontent.com/36288975/189275426-09eb6d0d-aab0-4d8a-8ef8-31288fbfe2a1.png)
  ![image](https://user-images.githubusercontent.com/36288975/189275464-1074d010-f106-4615-9959-68ed1a271502.png)
@@ -110,9 +110,9 @@ Figure -10 Circuit diagram of LED interface on port -0
 
 Figure -11 Hex file for simulation 
 
-Step 9: Select the hex file from the Kiel program folder and import the program in to the microcontroller as shown in figure 11 ,  debug and if no errors in connections are found, run the VSM simulation to view the output.
+Step 10: Select the hex file from the Kiel program folder and import the program in to the microcontroller as shown in figure 11 ,  debug and if no errors in connections are found, run the VSM simulation to view the output.
 
-# KIEL - PROGRAM FOR LED BLINKING ON AND OFF (BLINKING)
+# KIEL - PROGRAM FOR LED BLINKING ON AND OFF (BLINKING):
 ```
 #include <lpc214x.h>
 
